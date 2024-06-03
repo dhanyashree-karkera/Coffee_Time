@@ -1,0 +1,13 @@
+:host ::ng-deep .p-menubar {
+    background-color: bisque; 
+    font-weight: bold;
+  }
+  
+.w-full{
+    border: 1px solid black;
+    display: inline;
+    gap: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+

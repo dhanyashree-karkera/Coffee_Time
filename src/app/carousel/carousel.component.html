@@ -1,0 +1,19 @@
+<p-galleria 
+[value]="images" 
+[numVisible]="2"
+[(activeIndex)]="index"
+[autoPlay]="true"
+>
+    <ng-template pTemplate="item" let-item>
+        <img [src]="item.src" />
+    </ng-template>
+
+    <ng-template pTemplate="thumbnail" let-item width="50%">
+       <div class="grid grid-nogutter justify-content-center">
+        <img [src]="item.src" width="20%" />
+       </div>
+    </ng-template>
+
+    <button (click)="prevImage()">&lt;</button>
+    <button (click)="nextImage()">&gt;</button>
+</p-galleria>
