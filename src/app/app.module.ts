@@ -9,7 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { AppComponent } from './app.component';
 import { ColdComponent } from './cold/cold.component';
 import { DarkComponent } from './dark/dark.component';
-
+import { AboutComponent } from './about/about.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import { DarkComponent } from './dark/dark.component';
     CarouselComponent,
     HeaderComponent,
     ColdComponent,
-    DarkComponent
+    DarkComponent,
+    AboutComponent
   ],
   bootstrap:[AppComponent],
   imports: [
@@ -25,7 +30,12 @@ import { DarkComponent } from './dark/dark.component';
     MenubarModule,
     RouterModule,
     AppRoutingModule,
-    GalleriaModule
+    GalleriaModule,
+    FieldsetModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    PanelModule 
+   
   ],
   providers: []
 })

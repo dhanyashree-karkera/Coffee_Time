@@ -1,4 +1,5 @@
-<p-galleria 
+<app-header></app-header>
+<!-- <p-galleria 
 [value]="images" 
 [numVisible]="2"
 [(activeIndex)]="index"
@@ -17,3 +18,29 @@
     <button (click)="prevImage()">&lt;</button>
     <button (click)="nextImage()">&gt;</button>
 </p-galleria>
+-->
+
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://media.istockphoto.com/id/1149601355/photo/cappuccino-in-a-glass-cup.jpg?s=1024x1024&w=is&k=20&c=hK7K1GGmfSKC3CnZq4Hx9krSMWVHwePomUFesD78AlM=" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1460694560/photo/barista-make-coffee-cup-latte-art.jpg?s=1024x1024&w=is&k=20&c=HLNghlltwxAB9betyhD8CQVErUceD2JsCR7gdyoRwrk=" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.istockphoto.com/id/1149601355/photo/cappuccino-in-a-glass-cup.jpg?s=1024x1024&w=is&k=20&c=hK7K1GGmfSKC3CnZq4Hx9krSMWVHwePomUFesD78AlM=" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+

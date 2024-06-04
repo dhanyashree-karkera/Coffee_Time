@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -14,14 +15,17 @@ export class HeaderComponent {
     this.items = [
       {
         label: 'Home',
-        icon: 'pi pi-home'
+        icon: 'pi pi-home',
+        routerLink:['/carousel']
       },
+      
       {
         label: 'About',
-        icon: 'pi pi-star'
+        icon: 'pi pi-star',
+        routerLink:['/about']
       },
       {
-        label: 'Menu',
+        label: 'Products',
         icon: 'pi pi-bars',
         items: [
           {
@@ -41,12 +45,20 @@ export class HeaderComponent {
           }
         ]
       },
+    {
+      label: 'Review',
+        icon: 'pi pi-eye'
+      },
+
+      {
+        label: 'Blogs',
+        icon: 'pi pi-bolt'
+      },
       {
         label: 'Contact',
         icon: 'pi pi-address-book'
       }
     ];
-
-  
   }
-}
+  }
+

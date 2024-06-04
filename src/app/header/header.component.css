@@ -1,5 +1,5 @@
 :host ::ng-deep .p-menubar {
-    background-color: bisque; 
+    background-color:white; 
     font-weight: bold;
   }
   
@@ -8,6 +8,6 @@
     display: inline;
     gap: 1rem;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px ;
 }
 
